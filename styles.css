@@ -30,22 +30,22 @@ body, html {
 }
 
 .bgimg-1 {
-  background-image: url("0001.webp");
+  background-image: url("photos/0001.webp");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("0110.webp");
+  background-image: url("photos/0110.webp");
   min-height: 50%;
 }
 
 .bgimg-3 {
-  background-image: url("0125.webp");
+  background-image: url("photos/0125.webp");
   min-height: 400px;
 }
 
 .bgimg-4 {
-  background-image: url("0125.webp");
+  background-image: url("photos/0125.webp");
   min-height: 100%;
 }
 
