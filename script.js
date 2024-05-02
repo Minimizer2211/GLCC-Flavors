@@ -18,7 +18,7 @@ const updateImage = (selector, index) => {
   const baseUrl = baseUrls[selector];
   const frameSrc = `/photos/${baseUrl}${index.toString().padStart(4, '0')}.webp`;
   const bgImgElement = document.querySelector(selector);
-  bgImgElement.style.backgroundImage = `url(${frameSrc})`;
+  bgImgElement.style.backgroundImage = `/photos/url(${frameSrc})`;
 };
 
 const onScroll = () => {
