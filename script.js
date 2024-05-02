@@ -7,7 +7,7 @@ const preloadImages = (selector) => {
   const frameCount = frameCounts[selector];
   const baseUrl = baseUrls[selector];
   for (let i = 1; i < frameCount; i++) {
-    const frameSrc = `photos/${i.toString().padStart(4, '0')}.webp`;
+    const frameSrc = `photos/${index.toString().padStart(4, '0')}.webp`;
     const img = new Image();
     img.src = frameSrc;
   }
@@ -16,9 +16,9 @@ const preloadImages = (selector) => {
 const updateImage = (selector, index) => {
   const frameCount = frameCounts[selector];
   const baseUrl = baseUrls[selector];
-  const frameSrc = `photos/${i.toString().padStart(4, '0')}.webp`;
+  const frameSrc = `photos/${index.toString().padStart(4, '0')}.webp`;
   const bgImgElement = document.querySelector(selector);
-  bgImgElement.style.backgroundImage = `url(/photos/${frameSrc})`;
+  bgImgElement.style.backgroundImage = `url(${frameSrc})`;
 };
 
 const onScroll = () => {
